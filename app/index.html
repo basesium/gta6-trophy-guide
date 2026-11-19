@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: official names, descriptions and grades, a checklist that saves in your browser, a 6-stage roadmap to the platinum, and a cited guide for every trophy.">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+  <h1>Leonida Platinum</h1>
+  <p class="tagline">The offline trophy guide &amp; tracker for GTA VI. Every official name, description and grade, a checklist that saves in your browser, a roadmap to the platinum, and a guide for each trophy that names its sources.</p>
+  <ul class="grade-counts" aria-label="Trophy grades">
+    <li><span class="medal platinum" aria-hidden="true"></span> 1 Platinum</li>
+    <li><span class="medal gold" aria-hidden="true"></span> 2 Gold</li>
+    <li><span class="medal silver" aria-hidden="true"></span> 6 Silver</li>
+    <li><span class="medal bronze" aria-hidden="true"></span> 46 Bronze</li>
+    <li>28 hidden until earned</li>
+  </ul>
+  <p class="progress-line"><span id="progressText">0 of 55 trophies earned</span> <span id="progressChip" class="chip">0/55 earned</span></p>
+  <div class="progress-bar" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progressBar"><span id="progressFill"></span></div>
+</header>
+
+<main>
+  <section class="toolbar" aria-label="Tracker controls">
+    <label class="search-label" for="searchBox">Search trophies</label>
+    <input id="searchBox" type="search" placeholder="Search name, description or guide&hellip; (try &ldquo;vault&rdquo;)" autocomplete="off">
+    <div id="kindFilters" class="kind-filters" role="group" aria-label="Filter by kind">
+      <button type="button" data-kind="all" class="active" aria-pressed="true">All 55</button>
+      <button type="button" data-kind="story" aria-pressed="false">Story</button>
+      <button type="button" data-kind="missable" aria-pressed="false">Missable</button>
+      <button type="button" data-kind="collectibles" aria-pressed="false">Collectibles</button>
+      <button type="button" data-kind="activities" aria-pressed="false">Activities</button>
+      <button type="button" data-kind="online" aria-pressed="false">Online</button>
+    </div>
+    <p id="filterHint" class="hint">Showing every trophy. Tick a trophy when you earn it — progress saves in this browser.</p>
+    <div class="toolbar-buttons">
+      <button type="button" id="spoilerBtn" aria-pressed="true">Spoilers: hidden</button>
+      <button type="button" id="exportBtn">Export progress</button>
+      <label class="import-label" for="importFile">Import progress</label>
+      <input id="importFile" type="file" accept=".json,application/json">
+      <button type="button" id="resetBtn">Reset progress</button>
+    </div>
+  </section>
+
+  <section id="roadmap" aria-labelledby="roadmapHeading">
+    <h2 id="roadmapHeading">Roadmap to the platinum</h2>
+    <p>Six stages, in order, built from the official descriptions. The story comes first — it unlocks the map, the partner, the apps and the robbery tools everything else needs. Nothing outside the story is missable except the one trophy flagged below, but keep a manual save at the start of every chapter: GTA VI has no mission replay.</p>
+    <ol class="roadmap" id="roadmapList"></ol>
+  </section>
+
+  <section id="warnings" aria-labelledby="warningsHeading">
+    <h2 id="warningsHeading">Missable warnings</h2>
+    <p><strong>Only one trophy can be missed: Positive Mental Attitude.</strong> Lucia&rsquo;s balcony meditation in Chapter 1 disappears once that chapter ends, and there is no mission replay. Do it the morning after the mission Down to Earth, and keep a manual save from the start of Chapter 1 until the trophy pops. Every other trophy stays available after the credits — side-story finales, collectibles, activities and the 100% checklist all remain open.</p>
+    <ul>
+      <li><strong>Save before every chapter.</strong> 15 manual save slots plus one autosave: keep one at the start of each chapter and one untouched save from just before the final mission.</li>
+      <li><strong>Race Against Yago is time-sensitive.</strong> This Chapter 3 race in Yago&rsquo;s street-racing strand carries an hourglass icon and the strand counts toward Strangers &amp; Freaks. Save first, then race.</li>
+      <li><strong>Never use cheats on your trophy save.</strong> Cheats should switch off both trophies and saving.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="listHeading">
+    <h2 id="listHeading">All 55 trophies</h2>
+    <p id="listSummary" class="list-summary"></p>
+    <div id="trophyList" class="trophy-list"></div>
+    <p id="emptyState" class="empty-state" hidden>No trophies match this filter.</p>
+  </section>
+
+  <section aria-labelledby="sourcesHeading">
+    <h2 id="sourcesHeading">Sources &amp; how this guide was built</h2>
+    <p>Official names, descriptions, grades and hidden flags come from the official trophy list as published on <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a>, cross-checked against <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> (which also supplies the progress counts PlayStation tracks, such as 42 Shooting Range challenges). Guide details are drawn from <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag</a> and <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer</a>, with GTA Vice City Hub as a further check, and each trophy&rsquo;s guide below names the sources its facts come from. Every guide is written in our own words for this entry — sources are cited, never copied. Where a detail is still unconfirmed on launch week, the guide says so rather than guessing. No Rockstar Games logo, artwork or game screenshot is used anywhere in this guide.</p>
+    <p>This app is fully offline: it loads only its own files, fetches nothing at run time except its own trophy data, and stores your checklist in your browser&rsquo;s local storage. Export downloads a JSON file you can keep or import back later.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Leonida Platinum — an unofficial fan-made guide. Grand Theft Auto and GTA are trademarks of Rockstar Games; this guide is not affiliated with or endorsed by Rockstar Games or PlayStation. Trophy names and descriptions are shown as PlayStation publishes them.</p>
+</footer>
+</body>
+</html>
